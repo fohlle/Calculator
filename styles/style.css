@@ -1,0 +1,40 @@
+body{
+    margin-top: 300px;
+    background: rgba(179, 238, 206,0.5);
+}
+#container{
+    height:400px;
+    width:400px;
+    background: lightblue;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 60px;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+
+}
+#container div{
+    border:black solid 1px;
+    background-color:lightgray;
+}
+
+#display{
+    grid-area: 1/1/2/5;
+}
+#zero{
+    grid-area:5/2/6/3;
+}
+#equal{
+    grid-area:5/3/6/4;
+}
+#add{
+    grid-area:2/4/3/5;
+}
+#multiply{
+    grid-area:4/4/5/5;
+}
+#subtract{
+    grid-area:3/4/4/5;
+}
+#divide{
+    grid-area:5/4/6/5;
+}
