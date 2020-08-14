@@ -1,6 +1,6 @@
 body{
-    margin-top: 300px;
-    background: rgba(179, 238, 206,0.5);
+    background:linear-gradient(to right, rgba(9, 255, 0,0.2),rgba(0, 153, 255,0.3));
+    margin-top:300px;
 }
 #container{
     height:400px;
@@ -10,6 +10,7 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 60px;
     grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+    border:black solid 1px;
 
 }
 #container div{

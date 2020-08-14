@@ -24,8 +24,27 @@ function operate(string,num1,num2){
         return "Sry no valid operator";
     }
 }
+function number(){
 
-console.log(operate("+",4,14));
-console.log(operate("-",4,14));
-console.log(operate("*",4,4));
-console.log(operate("/",14,2));
+}
+
+const btn = [...document.querySelectorAll("#container button")];
+const display = document.querySelector("#display");
+const para = document.createElement("p");
+
+btn.forEach(butts => {
+    butts.addEventListener("click" , event => {
+        let data = [...event.target.textContent];
+        if(event.target.textContent === "clear"){
+            data = [];
+            para.textContent = data;
+        }else{
+        para.textContent += data + " ";
+        }
+        display.appendChild(para);
+       
+       console.log(event.target.textContent);
+       console.log(data)
+    });
+});
+console.log(btn);
