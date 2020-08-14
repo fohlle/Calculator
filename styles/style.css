@@ -15,7 +15,9 @@ body{
 #container div{
     border:black solid 1px;
     background-color:lightgray;
+    display:grid;
 }
+
 
 #display{
     grid-area: 1/1/2/5;
